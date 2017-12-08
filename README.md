@@ -32,3 +32,16 @@ $ pip3 install zopfli
 $ curl -O http://fonts.gstatic.com/ea/notosansjapanese/v6/download.zip
 $ unzip ./download.zip -d ./src
 ```
+
+### Build
+
+Character list
+
+```sh
+cat ./config/chars.jp.txt | tr -d '\n' > ./config/chars.jp.min.txt
+```
+
+#### cf.
+
+- https://ja.wikipedia.org/wiki/Unicode%E4%B8%80%E8%A6%A7_0000-0FFF
+- http://www.asahi-net.or.jp/~AX2S-KMTN/ref/jisx0208.html
