@@ -65,3 +65,9 @@ http://www.asahi-net.or.jp/~AX2S-KMTN/ref/jisx0208.html を参考に「記号、
 
 - https://ja.wikipedia.org/wiki/Unicode%E4%B8%80%E8%A6%A7_0000-0FFF
 - http://www.asahi-net.or.jp/~AX2S-KMTN/ref/jisx0208.html
+
+---
+
+LICENSE
+
+See also [Noto fonts](https://github.com/googlei18n/noto-fonts)
