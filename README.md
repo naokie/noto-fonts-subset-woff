@@ -41,6 +41,12 @@ Character list
 cat ./config/chars.jp.txt | tr -d '\n' > ./config/chars.jp.min.txt
 ```
 
+### Config
+
+#### chars.jp.txt
+
+http://www.asahi-net.or.jp/~AX2S-KMTN/ref/jisx0208.html を参考に「記号、英数字、かな」「第1水準漢字」のみを含めたテキスト。
+
 #### cf.
 
 - https://ja.wikipedia.org/wiki/Unicode%E4%B8%80%E8%A6%A7_0000-0FFF
