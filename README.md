@@ -32,3 +32,36 @@ $ pip3 install zopfli
 $ curl -O http://fonts.gstatic.com/ea/notosansjapanese/v6/download.zip
 $ unzip ./download.zip -d ./src
 ```
+
+### Build
+
+Character list
+
+```sh
+cat ./config/chars.jp.txt | tr -d '\n' > ./config/chars.jp.min.txt
+```
+
+WOFF
+
+```sh
+pyftsubset ./src/NotoSansJP-Regular.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Regular.min.woff
+pyftsubset ./src/NotoSansJP-Bold.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Bold.min.woff
+```
+
+WOFF2
+
+```sh
+pyftsubset ./src/NotoSansJP-Regular.otf --text-file="./config/chars.jp.min.txt" --flavor=woff2 --output-file=./dist/NotoSansJP-Regular.min.woff2
+pyftsubset ./src/NotoSansJP-Bold.otf --text-file="./config/chars.jp.min.txt" --flavor=woff2 --output-file=./dist/NotoSansJP-Bold.min.woff2
+```
+
+### Config
+
+#### chars.jp.txt
+
+http://www.asahi-net.or.jp/~AX2S-KMTN/ref/jisx0208.html を参考に「記号、英数字、かな」「第1水準漢字」のみを含めたテキスト。
+
+#### cf.
+
+- https://ja.wikipedia.org/wiki/Unicode%E4%B8%80%E8%A6%A7_0000-0FFF
+- http://www.asahi-net.or.jp/~AX2S-KMTN/ref/jisx0208.html
