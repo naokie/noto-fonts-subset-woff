@@ -70,4 +70,5 @@ http://www.asahi-net.or.jp/~AX2S-KMTN/ref/jisx0208.html を参考に「記号、
 
 LICENSE
 
+All Noto fonts are published under the [SIL Open Font License (OFL) v1.1](http://scripts.sil.org/OFL), which allows you to copy, modify, and redistribute them if you need to.
 See also [Noto fonts](https://github.com/googlei18n/noto-fonts)
