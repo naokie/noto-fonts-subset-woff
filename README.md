@@ -41,6 +41,20 @@ Character list
 cat ./config/chars.jp.txt | tr -d '\n' > ./config/chars.jp.min.txt
 ```
 
+WOFF
+
+```sh
+pyftsubset ./src/NotoSansJP-Regular.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Regular.min.woff
+pyftsubset ./src/NotoSansJP-Bold.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Bold.min.woff
+```
+
+WOFF2
+
+```sh
+pyftsubset ./src/NotoSansJP-Regular.otf --text-file="./config/chars.jp.min.txt" --flavor=woff2 --output-file=./dist/NotoSansJP-Regular.min.woff2
+pyftsubset ./src/NotoSansJP-Bold.otf --text-file="./config/chars.jp.min.txt" --flavor=woff2 --output-file=./dist/NotoSansJP-Bold.min.woff2
+```
+
 ### Config
 
 #### chars.jp.txt
