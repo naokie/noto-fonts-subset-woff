@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+rm ./src/*.otf
+rm ./dist/*.{woff,woff2}

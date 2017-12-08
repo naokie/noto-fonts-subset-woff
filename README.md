@@ -44,8 +44,8 @@ cat ./config/chars.jp.txt | tr -d '\n' > ./config/chars.jp.min.txt
 WOFF
 
 ```sh
-pyftsubset ./src/NotoSansJP-Regular.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Regular.min.woff
-pyftsubset ./src/NotoSansJP-Bold.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Bold.min.woff
+pyftsubset ./src/NotoSansJP-Regular.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Regular.min.woff --layout-features='' --desubroutinize
+pyftsubset ./src/NotoSansJP-Bold.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Bold.min.woff --layout-features='' --desubroutinize
 ```
 
 WOFF2
@@ -70,4 +70,5 @@ http://www.asahi-net.or.jp/~AX2S-KMTN/ref/jisx0208.html を参考に「記号、
 
 LICENSE
 
+All Noto fonts are published under the [SIL Open Font License (OFL) v1.1](http://scripts.sil.org/OFL), which allows you to copy, modify, and redistribute them if you need to.
 See also [Noto fonts](https://github.com/googlei18n/noto-fonts)
