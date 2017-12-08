@@ -44,8 +44,8 @@ cat ./config/chars.jp.txt | tr -d '\n' > ./config/chars.jp.min.txt
 WOFF
 
 ```sh
-pyftsubset ./src/NotoSansJP-Regular.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Regular.min.woff
-pyftsubset ./src/NotoSansJP-Bold.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Bold.min.woff
+pyftsubset ./src/NotoSansJP-Regular.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Regular.min.woff --layout-features='' --desubroutinize
+pyftsubset ./src/NotoSansJP-Bold.otf --text-file="./config/chars.jp.min.txt" --flavor=woff --with-zopfli --output-file=./dist/NotoSansJP-Bold.min.woff --layout-features='' --desubroutinize
 ```
 
 WOFF2
