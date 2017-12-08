@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+brew -h 1>/dev/null 2>/dev/null || ( echo 'Homebrew is required'; exit 1 )
+
+brew update
+
+# Intall Python3
+brew install python3
+
+# Install fonttools
+pip3 install fonttools
+
+# Install brotli
+pip3 install brotli
+
+# Install zopfli
+pip3 install zopfli
+
+# Download Noto Sans Japanese
+curl -O http://fonts.gstatic.com/ea/notosansjapanese/v6/download.zip
+unzip ./download.zip -d ./src
